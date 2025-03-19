@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Raja Afzal</h1>
+        <button onclick="changeBackground()">Change Background Color</button>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="group8.png" alt="Group 8 Image" class="group8-img">
+            <p>Hello! I am Raja Afzal, a web developer passionate about creating web experiences.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some projects I have worked on:</p>
+            <ul>
+                <li>Portfolio Website</li>
+                <li>E-commerce Website</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            
+            <div class="contact-container">
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <p><strong>Email:</strong> afzalraja619@gmail.com</p>
+                    <p><strong>Phone:</strong> +92 123 4567890</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/rajaafzal" target="_blank">linkedin.com/in/rajaafzal</a></p>
+                </div>
+
+                <!-- Contact Form -->
+                <form onsubmit="return validateForm()" class="contact-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact: afzalraja619@gmail.com</p>
+    </footer>
+
+    <script>
+        function changeBackground() {
+            document.body.style.backgroundColor = 
+                '#' + Math.floor(Math.random()*16777215).toString(16);
+        }
+
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let message = document.getElementById("message").value;
+            if (name === "" || message === "") {
+                alert("Please fill out both fields before submitting.");
+                return false;
+            }
+            alert("Your message has been sent!");
+            return true;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+/* Typography Styles */
+h1, h2 {
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    color: #222;
+}
+
+p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Layout Structure */
+main {
+    padding: 20px;
+    max-width: 800px; /* Ensures content doesn't stretch too wide */
+    margin: 0 auto; /* Centers the content */
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header & Navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation Hover Effect */
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* Image Styling */
+.group8-img {
+    display: block;
+    width: 150px;  /* Adjust size */
+    height: auto;
+    border-radius: 50%;  /* Makes the image circular */
+    margin: 10px auto;  /* Centers the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.contact-form input, .contact-form button {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
